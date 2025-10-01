@@ -46,7 +46,7 @@ Options common to both Receivers and TX Modules:
     </figure>
 
     - UART Baud: The baud rate to which the receiver will send and receive signals to or from a Flight Controller or other serially connected device. Under normal circumstances, this setting should be left at the default 420000 baud.
-        - Exception: If you are running KISS/Kiss Ultra firmware set the receiver's UART baud rate to 400000, as KISS uses this baud rate for CRSF.
+        - Exception: If you are running Original KISS firmware (NOT ULTRA!) set the receiver's UART baud rate to 400000, as KISS uses this baud rate for CRSF.
 
     - Invert TX Pin: This setting should also be left disabled or unchecked under normal circumstances. It inverts the CRSF signal coming out of the TX pin of the receiver.
         - Receivers that will be connected to an SBUS pad on Flight Controllers without extra uninverted RX pads should enable this setting. Additionally the command `set serialrx_inverted = on` will be needed in the Flight Controller configuration.
